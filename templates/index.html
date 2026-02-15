@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Next Gen · Cultura che unisce</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        * { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        
+        .hero {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 0.75rem;
+            aspect-ratio: 1 / 1;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .cfu-card {
+            border-radius: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in-out both;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .navbar { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <nav class="navbar fixed w-full z-50 bg-transparent backdrop-blur-sm bg-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white drop-shadow-lg">Arka Next Gen</div>
+            <div class="hidden md:flex space-x-6 text-white/90 font-medium">
+                <a href="#hero" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">Vision</a>
+                <a href="#cfu" class="hover:text-white transition">2 CFU</a>
+                <a href="#gallery" class="hover:text-white transition">Gallery</a>
+                <a href="#contact" class="hover:text-white transition">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero flex items-center justify-center relative text-center px-4">
+        <div class="animate__animated animate__fadeIn">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl">
+                Cultura che <span class="text-emerald-300">unisce</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-8 drop-shadow-lg">
+                Promuoviamo la cultura come strumento di coesione sociale.<br>Sviluppiamo processi generativi per il territorio.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <span class="bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-6 py-2 font-medium">Cultura inclusiva</span>
+                <span class="bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-6 py-2 font-medium">Comunità attiva</span>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+            <div class="fade-in">
+                <i class="fas fa-users text-4xl text-emerald-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Protagonismo</h3>
+                <p class="text-gray-600">Mettiamo i giovani al centro dei processi decisionali e creativi.</p>
+            </div>
+            <div class="fade-in" style="animation-delay: 0.2s">
+                <i class="fas fa-map-marked-alt text-4xl text-emerald-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Territorio</h3>
+                <p class="text-gray-600">Una carovana che attraversa e rigenera i contesti locali.</p>
+            </div>
+            <div class="fade-in" style="animation-delay: 0.4s">
+                <i class="fas fa-lightbulb text-4xl text-emerald-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Innovazione</h3>
+                <p class="text-gray-600">Nuovi linguaggi per una comunicazione non autoreferenziale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cfu" class="py-20 px-4 bg-gray-50 text-center">
+        <div class="max-w-5xl mx-auto">
+            <div class="cfu-card bg-gradient-to-br from-emerald-50 to-emerald-100 p-10 md:p-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Ottieni 2 CFU</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Partecipa al nostro percorso formativo riconosciuto: laboratori pratici, eventi culturali e progettazione sociale.
+                </p>
+                <a href="mailto:mori.arkaeventiculturali@gmail.com" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 px-10 rounded-full shadow-lg transition duration-300 text-lg">
+                    Richiedi Informazioni
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Carovana in <span class="text-emerald-600">immagini</span></h2>
+            <p class="text-gray-500 mb-12 max-w-2xl mx-auto italic">Uno sguardo alla nostra identità visiva in attesa degli scatti della Carovana.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=800&q=80" alt="1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=800&q=80" alt="2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80" alt="3"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80" alt="4"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=800&q=80" alt="5"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80" alt="6"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="7"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="8"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Scrivici</h2>
+            <p class="text-gray-500 mb-8">Entra in contatto con il team di Arka Next Gen.</p>
+            <form action="#" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                        <label class="text-sm font-medium ml-1">Nome</label>
+                        <input type="text" class="w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="text-sm font-medium ml-1">Email</label>
+                        <input type="email" class="w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                </div>
+                <div class="text-left">
+                    <label class="text-sm font-medium ml-1">Messaggio</label>
+                    <textarea rows="4" class="w-full px-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-emerald-500 outline-none"></textarea>
+                </div>
+                <button type="button" class="w-full bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-emerald-700 transition">
+                    Invia Messaggio
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-2xl font-bold text-white mb-4">Arka Next Gen</div>
+            <p class="max-w-md mx-auto mb-6 italic text-sm text-gray-500">
+                "Promuovere processi comunicativi generativi per lo sviluppo del territorio attraverso la cultura."
+            </p>
+            <div class="mb-8">
+                <a href="mailto:mori.arkaeventiculturali@gmail.com" class="text-emerald-400 font-medium hover:underline text-lg">
+                    <i class="fas fa-envelope mr-2"></i>mori.arkaeventiculturali@gmail.com
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8 text-2xl">
+                <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-xs">
+                <p>&copy; 2026 Arka Eventi Culturali</p>
+                <p class="mt-2 text-gray-600 uppercase tracking-widest">Implementazione Strategica · Modello di Transizione Digitale</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-gray-900', 'shadow-lg');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-gray-900', 'shadow-lg');
+                nav.classList.add('bg-transparent');
+            }
+        });
+    </script>
+</body>
+</html>
