@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arka Next Gen · Cultura che unisce</title>
-    
+    <meta property="og:title" content="Arka Next Gen · Cultura che unisce">
+<meta property="og:description" content="Un ponte digitale per la coesione sociale e il volontariato giovanile.">
+<meta property="og:image" content="https://raw.githubusercontent.com/TizMori/arka-next-gen/main/Logo%20Arka%20Next%20Gen.png">
+<meta property="og:url" content="https://tizmori.github.io/arka-next-gen/">
+<meta name="twitter:card" content="summary_large_image">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
@@ -65,13 +69,31 @@
 </head>
 <body class="bg-gray-50 antialiased">
 
-    <nav class="navbar fixed w-full z-50 bg-transparent backdrop-blur-sm bg-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-    <img src="Arka Eventi Culturali -logo.jpg" alt="Logo Arka" class="h-12 w-auto object-contain"> 
-    <div class="leading-tight">
-        <div class="text-xl font-extrabold text-white tracking-tight text-emerald-400">ARKA</div>
-        <div class="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Eventi Culturali</div>
+   <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="https://raw.githubusercontent.com/TizMori/arka-next-gen/main/Logo%20Arka%20Next%20Gen.png" 
+                 alt="Logo Arka Next Gen" 
+                 class="h-12 md:h-16 w-auto object-contain">
+            
+            <div class="border-l border-white/20 pl-3 flex flex-col justify-center">
+                <span class="text-[9px] text-emerald-400 font-bold uppercase tracking-[0.2em] mb-1">Un programma di</span>
+                <div class="flex items-center space-x-2 text-white">
+                    <img src="https://raw.githubusercontent.com/TizMori/arka-next-gen/main/Arka%20Eventi%20Culturali%20-logo.jpg" 
+                         alt="Logo Arka Eventi" 
+                         class="h-6 w-auto opacity-90 rounded-sm">
+                    <div class="font-bold text-[10px] tracking-tighter uppercase hidden sm:block">
+                        Arka Eventi <span class="font-light">Culturali</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:flex space-x-6 text-white/90 font-medium">
+            <a href="#hero" class="hover:text-emerald-400 transition">Home</a>
+            <a href="#about" class="hover:text-emerald-400 transition">Vision</a>
+            <a href="#cfu" class="hover:text-emerald-400 transition">2 CFU</a>
+            <a href="#gallery" class="hover:text-emerald-400 transition">Gallery</a>
+            <a href="#contact" class="hover:text-emerald-400 transition">Contatti</a>
+        </div>
     </div>
 </div>
             <div class="hidden md:flex space-x-6 text-white/90 font-medium">
@@ -84,19 +106,19 @@
         </div>
     </nav>
 
-    <section id="hero" class="hero flex items-center justify-center relative text-center px-4">
-        <div class="animate__animated animate__fadeIn">
-           <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl">
-    Arka <span class="text-emerald-300">Eventi Culturali</span>
-</h1>
-            <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-8 drop-shadow-lg">
-                Promuoviamo la cultura come strumento di coesione sociale.<br>Sviluppiamo processi generativi per il territorio.
-            </p>
-            <div class="flex flex-wrap gap-4 justify-center">
-                <span class="bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-6 py-2 font-medium">Cultura inclusiva</span>
-                <span class="bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-full px-6 py-2 font-medium">Comunità attiva</span>
-            </div>
-        </div>
+    <div class="animate__animated animate__fadeIn px-4">
+    <p class="text-emerald-300 font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-4 drop-shadow-md">Arka Eventi Culturali presenta</p>
+    <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl leading-tight">
+        ARKA <span class="text-emerald-300">NEXT GEN</span>
+    </h1>
+    <p class="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto mb-10 drop-shadow-lg font-light italic leading-relaxed">
+        "Il programma di volontariato giovanile per lo sviluppo di processi comunicativi generativi e coesione sociale."
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#volontari" class="bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500 rounded-full px-8 py-3 font-bold transition shadow-lg w-full sm:w-auto">Entra nella Carovana</a>
+        <span class="bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-full px-8 py-3 font-medium w-full sm:w-auto">Progetto Sociale 2026</span>
+    </div>
+</div>
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <i class="fas fa-chevron-down text-white text-2xl"></i>
         </div>
