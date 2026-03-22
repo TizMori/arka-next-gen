@@ -21,13 +21,16 @@
     <style>
         * { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
         
-        .hero {
+       .hero {
             height: 100vh;
-            /* Usiamo il tuo file hero_bg.jpg caricato su GitHub */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/TizMori/arka-next-gen/main/hero_bg.jpg');
+            /* Ripristino immagine originale DeepSeek con overlay scuro */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .gallery-item {
@@ -106,7 +109,18 @@
             </div>
         </div>
     </nav>
+</nav> <section id="hero" class="hero relative text-center"> 
+        
+        <div class="animate__animated animate__fadeIn px-4">
+            <p class="text-emerald-300 font-bold ...">Arka Eventi Culturali presenta</p>
+            ```
 
+### Riassumendo:
+Nel codice che mi hai incollato nell'ultimo messaggio, la sezione Hero iniziava direttamente con `<div class="animate__animated...">`. **Mancava il "padre"**, ovvero `<section id="hero" class="hero...">`. 
+
+Aggiungendo quella riga, il CSS capisce che deve applicare lo sfondo dei ragazzi a tutto quel blocco di testo.
+
+Proviamo? Se incolli quella riga di `<section...>` subito dopo `</nav>`, lo sfondo "magicamente" riappare dietro le scritte.
     <div class="animate__animated animate__fadeIn px-4">
     <p class="text-emerald-300 font-bold tracking-[0.2em] uppercase text-xs md:text-sm mb-4 drop-shadow-md">Arka Eventi Culturali presenta</p>
     <h1 class="text-4xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-2xl leading-tight">
